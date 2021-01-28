@@ -1,0 +1,72 @@
+---
+title: "Control Structures in R"
+author: "vishnusagar2021"
+date: "1/28/2021"
+output: html_document
+---
+# Control Structures in R - Loops in R
+To control the execution of the expressions flow in R we use the control structures.
+```{r}
+#Control Structures in R - Loops in R
+# There are eight types of control structures in R
+
+# 8 loops
+
+# *if()
+# *if_else()
+# *for()
+# *nested loops()
+# *while()
+# *repeat and break()
+# *next()
+# *return()
+```
+
+## 1. if()
+To carried out a task/command only `if` this condition is returned as *TRUE*
+ie., condition is TRUE it will execute the command n when it FALSE it will not.
+**Syntax**
+'if (test_expression) {statement}'
+
+```{r, echo=TRUE}
+#eg.
+
+x= sample(x= 1:100, size=1, replace=FALSE)     #data set  
+x
+#statement section........................if(test_expression){statement}
+if(x%%2==0) {print(paste(x,"is an even number"))}                        
+print
+# paste, before statement print(paste,) used in the case of vector + character
+```
+```{r, echo=TRUE}
+#eg2
+values = 1:10
+values
+if(sample (values, 1) <5){print (paste (values,"is less than or equal to 5"))}
+  
+
+```
+
+## if-else()
+ True/False it can shows 2 outputs
+ true for statement 1 or false for statement 2 one at a time
+ 
+**syntax**
+1. statement
+
+2. if (test-expression) {statement} else {statemnt}
+
+```{r, echo=TRUE}
+# eg:
+x= sample(x= 1:100, size=1, replace=FALSE)     #1. statement
+x
+
+if(x%%2 ==0) 
+  {print(paste(x,"even number"))} else {print(paste(x, "odd number"))} #syntax
+
+```
+```{r, echo=TRUE}
+
+
+```
+
