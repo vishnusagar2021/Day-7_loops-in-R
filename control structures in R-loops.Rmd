@@ -6,6 +6,8 @@ output: html_document
 ---
 # Control Structures in R - Loops in R
 To control the execution of the expressions flow in R we use the control structures.
+
+A *loop* is a sequence of instructions that is repeated until a certain condition is reached.  for, while and repeat, with the additional clauses break and next are used to construct loops.
 ```{r}
 #Control Structures in R - Loops in R
 # There are eight types of control structures in R
@@ -66,7 +68,29 @@ if(x%%2 ==0)
 
 ```
 ```{r, echo=TRUE}
+#eg2
 
+val1 = 30    # creating a fist variable val1
+val2 = 20     # creating a fist variable val2
 
+if(val1 > val2) {print("value 1 is less than value 2")} else if (val2>val1){print("value 1 is less than value 2")}
+
+```
+## 3. for ()
+
+`for` loop is executed until a known number of times(finite).
+
+**Syntax**
+
+`for(test_expression){statement}'
+
+```{r, echo=TRUE}
+#eg
+xy= c(1:10)
+for (id in 1:10){print(xy [id])}   # for(range/condition) {statement}
+
+p= matrix(c(1:16),nrow=4,ncol=4, byrow=FALSE)
+p
+for (id in p) {print (p [id])}
 ```
 
